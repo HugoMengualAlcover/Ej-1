@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         btnSaludo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(txtName.getText().toString().equals("")){
+                if(txtName.getText().toString().isEmpty()){
                     Toast.makeText(MainActivity.this, "No has introducido ningun nobre", Toast.LENGTH_SHORT).show();
                 }else{
                     lblSaludo.setText("Hola " + txtName.getText() + ", buenos dias");
